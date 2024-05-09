@@ -37,11 +37,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    # add apps
     'rest_framework',
     'rest_framework.authtoken',
     'corsheaders',
     'djoser',
+]
+
+#add origins of frontend
+CORS_ALLOWED_ORIGINS = [
+  "http://localhost:8080",
 ]
 
 MIDDLEWARE = [
